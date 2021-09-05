@@ -1,4 +1,4 @@
-# ‘What’s in the box?!’: Deflecting Adversarial Attacks byRandomly Deploying Adversarially-Disjoint Models #
+# "What’s in the box?!": Deflecting Adversarial Attacks by Randomly Deploying Adversarially-Disjoint Models #
 - Code for the paper: ["What's in the box?!": Deflecting Adversarial Attacks by Randomly Deploying Adversarially-Disjoint Models](https://arxiv.org/pdf/2102.05104.pdf) 
 - Authors: [Sahar Abdelnabi](https://scholar.google.de/citations?user=QEiYbDYAAAAJ&hl=en), [Mario Fritz](https://cispa.saarland/group/fritz/)
 
