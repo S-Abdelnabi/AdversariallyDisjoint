@@ -51,3 +51,31 @@ python main_sample.py --optimizer_type sgd --lr 0. --lr_max 0.1 --lr_sched cycle
 ```javascript
 python main_sample.py --optimizer_type sgd --lr 0. --lr_max 0.1 --lr_sched cycle --epochs 120 --up_epochs 30 --down_epochs 90 --models_num 8 --seed 1002 --tranfser_check_interval 4 --attack_type_check pgd --include_gradient_angle 1 --gradient_weight 0.4 --start_gradient_loss 0 --end_gradient_loss 5 --include_transfer_loss 1 --start_transfer_loss 0 --include_transfer_sgn_loss 1 --transfer_loss_weight 0.8 --start_transfer_sgn_loss 0 --transfer_loss_sgn_weight 0.8 --fgm_epsilon_training 6 --arch resnet18 --batch_size 75 
 ```
+## Evaluation ##
+
+### Clean accuracy ###
+```javascript
+python evaluate_nonadv_acc.py --models_num <num> --save_dir <checkpt_folder>  --arch resnet18 --batch_size 128 --checkpt _best
+```
+
+### Blackbox attacks across models and average of sets ###
+#### FGSM ####
+```javascript
+python evaluate_blackbox_across_models.py --models_num <num> --save_dir <checkpt_folder> --attack_type fgsm --epsilon 0.031 --arch resnet18 --batch_size 128 --checkpt _best
+```
+#### FGM ####
+```javascript
+python evaluate_blackbox_across_models.py --models_num <num>  --save_dir <checkpt_folder> --attack_type fgm --epsilon 1 --arch resnet18 --batch_size 128 --checkpt _best
+```
+#### R-FGSM ####
+```javascript
+python evaluate_blackbox_across_models.py --models_num <num> --save_dir <checkpt_folder> --attack_type rfgsm --epsilon 0.031 --arch resnet18 --batch_size 128 --checkpt _best
+```
+#### PGD ####
+```javascript
+python evaluate_blackbox_across_models.py --models_num <num> --save_dir <checkpt_folder> --attack_type pgd --epsilon 0.031 --alpha 0.0078 --bim_itrs <iters> --arch resnet18 --batch_size 128 --checkpt _best
+```
+#### MI-FGSM ####
+```javascript
+python evaluate_blackbox_across_models.py --models_num <num> --save_dir <checkpt_folder> --attack_type mifgsm --epsilon 0.031 --alpha 0.0031 --mi_itrs 20 --arch resnet18 --batch_size 128 --checkpt _best
+```
