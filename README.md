@@ -87,3 +87,15 @@ python evaluate_blackbox_across_models.py --models_num <num> --save_dir <checkpt
 ```javascript
 python evaluate_blackbox_across_models.py --models_num <num> --save_dir <checkpt_folder> --attack_type ead --arch resnet18 --batch_size 128 --checkpt _best --ead_conf <conf> 
 ```
+### Ensemble Attacks ###
+Attacks computed using a subset of models, and evaluated on the rest of the set. Running the following file will output the results in 'ens_out_#num_models.txt'
+
+```javascript
+python evaluate_ens_attacks.py --models_num <num> --save_dir <checkpt_folder> --attack_type fgsm --epsilon 0.031 --batch_size 128 --checkpt _best
+```
+
+```javascript
+python evaluate_ens_attacks.py --models_num <num> --save_dir <checkpt_folder>  --attack_type pgd --epsilon 0.031 --alpha 0.0078 --bim_itrs 20 --arch resnet18 --batch_size 128 --checkpt _best
+```
+
+
