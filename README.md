@@ -35,3 +35,19 @@ python main.py --optimizer_type sgd --lr 0. --lr_max 0.2 --lr_sched cycle --epoc
 ```javascript
 python main.py --optimizer_type sgd --lr 0. --lr_max 0.2 --lr_sched cycle --epochs 76 --models_num 4 --seed 1002 --tranfser_check_interval 4 --attack_type_check pgd --include_gradient_angle 1 --gradient_weight 0.4 --start_gradient_loss 0 --end_gradient_loss 5 --include_transfer_loss 1 --start_transfer_loss 1 --include_transfer_sgn_loss 1 --transfer_loss_weight 0.5 --start_transfer_sgn_loss 2 --transfer_loss_sgn_weight 0.4 --fgm_epsilon_training 6 --arch resnet18 --batch_size 106
 ```
+### Set of 5 models ###
+```javascript
+python main_sample.py --optimizer_type sgd --lr 0. --lr_max 0.2 --lr_sched cycle --epochs 100 --models_num 5 --seed 1002 --tranfser_check_interval 4 --attack_type_check pgd --include_gradient_angle 1 --gradient_weight 0.4 --start_gradient_loss 0 --end_gradient_loss 5 --include_transfer_loss 1 --start_transfer_loss 0 --include_transfer_sgn_loss 1 --transfer_loss_weight 0.8 --start_transfer_sgn_loss 0 --transfer_loss_sgn_weight 0.8 --fgm_epsilon_training 6 --arch resnet18 --batch_size 106
+```
+### Set of 6 models ###
+```javascript
+python main__sample.py --optimizer_type sgd --lr 0. --lr_max 0.2 --lr_sched cycle --epochs 120 --models_num 6 --seed 1002 --tranfser_check_interval 4 --attack_type_check pgd --include_gradient_angle 1 --gradient_weight 0.4 --start_gradient_loss 0 --end_gradient_loss 5 --include_transfer_loss 1 --start_transfer_loss 0 --include_transfer_sgn_loss 1 --transfer_loss_weight 0.8 --start_transfer_sgn_loss 0 --transfer_loss_sgn_weight 0.8 --fgm_epsilon_training 6 --arch resnet18 --batch_size 106 
+```
+### Set of 7 models ###
+```javascript
+python main_sample.py --optimizer_type sgd --lr 0. --lr_max 0.1 --lr_sched cycle --epochs 120 --up_epochs 30 --down_epochs 90 --models_num 7 --seed 1002 --tranfser_check_interval 4 --attack_type_check pgd --include_gradient_angle 1 --gradient_weight 0.4 --start_gradient_loss 0 --end_gradient_loss 5 --include_transfer_loss 1 --start_transfer_loss 0 --include_transfer_sgn_loss 1 --transfer_loss_weight 0.8 --start_transfer_sgn_loss 0 --transfer_loss_sgn_weight 0.8 --fgm_epsilon_training 6 --arch resnet18 --batch_size 90
+```
+### Set of 8 models ###
+```javascript
+python main_sample.py --optimizer_type sgd --lr 0. --lr_max 0.1 --lr_sched cycle --epochs 120 --up_epochs 30 --down_epochs 90 --models_num 8 --seed 1002 --tranfser_check_interval 4 --attack_type_check pgd --include_gradient_angle 1 --gradient_weight 0.4 --start_gradient_loss 0 --end_gradient_loss 5 --include_transfer_loss 1 --start_transfer_loss 0 --include_transfer_sgn_loss 1 --transfer_loss_weight 0.8 --start_transfer_sgn_loss 0 --transfer_loss_sgn_weight 0.8 --fgm_epsilon_training 6 --arch resnet18 --batch_size 75 
+```
