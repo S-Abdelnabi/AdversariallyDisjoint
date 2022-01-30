@@ -24,6 +24,8 @@ conda env create --name AdvDisjoint --file=environment.yml
 
 You can find pre-trained models for the different sets (ranging from 3 to 8 models) [here](https://oc.cs.uni-saarland.de/owncloud/index.php/s/LSfHBZfxozQAWAm).
 
+- - -
+
 ## Training ##
 Training sets of adversarially-disjoint models, dataset: CIFAR-10, architecture:  PreAct ResNet18
 
@@ -51,6 +53,7 @@ python main_sample.py --optimizer_type sgd --lr 0. --lr_max 0.1 --lr_sched cycle
 ```javascript
 python main_sample.py --optimizer_type sgd --lr 0. --lr_max 0.1 --lr_sched cycle --epochs 120 --up_epochs 30 --down_epochs 90 --models_num 8 --seed 1002 --tranfser_check_interval 4 --attack_type_check pgd --include_gradient_angle 1 --gradient_weight 0.4 --start_gradient_loss 0 --end_gradient_loss 5 --include_transfer_loss 1 --start_transfer_loss 0 --include_transfer_sgn_loss 1 --transfer_loss_weight 0.8 --start_transfer_sgn_loss 0 --transfer_loss_sgn_weight 0.8 --fgm_epsilon_training 6 --arch resnet18 --batch_size 75 
 ```
+- - -
 ## Evaluation ##
 
 ### Clean accuracy ###
