@@ -79,3 +79,11 @@ python evaluate_blackbox_across_models.py --models_num <num> --save_dir <checkpt
 ```javascript
 python evaluate_blackbox_across_models.py --models_num <num> --save_dir <checkpt_folder> --attack_type mifgsm --epsilon 0.031 --alpha 0.0031 --mi_itrs 20 --arch resnet18 --batch_size 128 --checkpt _best
 ```
+#### C&W ####
+```javascript
+python evaluate_blackbox_across_models.py --models_num <num> --save_dir <checkpt_folder> --attack_type cw --cw_c 1.0 --arch resnet18 --batch_size 128 --checkpt _best --cw_conf <conf>
+```
+#### EAD ####
+```javascript
+python evaluate_blackbox_across_models.py --models_num <num> --save_dir <checkpt_folder> --attack_type ead --arch resnet18 --batch_size 128 --checkpt _best --ead_conf <conf> 
+```
