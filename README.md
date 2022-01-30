@@ -100,5 +100,20 @@ python evaluate_ens_attacks.py --models_num <num> --save_dir <checkpt_folder> --
 ```javascript
 python evaluate_ens_attacks.py --models_num <num> --save_dir <checkpt_folder>  --attack_type pgd --epsilon 0.031 --alpha 0.0078 --bim_itrs 20 --arch resnet18 --batch_size 128 --checkpt _best
 ```
+- - -
+## Citation ##
 
+- If you find this code helpful, please cite our paper:
+```javascript
+@inproceedings{abdelnabi21ccsw,
+    title = {"What's in the box?!": Deflecting Adversarial Attacks by Randomly Deploying Adversarially-Disjoint Models},
+    author = {Abdelnabi, Sahar and Fritz, Mario},
+    booktitle = {Moving Target Defense Workshop in conjuncture with CCS},
+    year = {2021}
+}
+```
+- - -
 
+## Acknowledgement ##
+
+- We thank the authors of [FAST IS BETTER THAN FREE: REVISITING ADVERSARIAL TRAINING](https://arxiv.org/pdf/2001.03994.pdf) for their repository. Parts of our code is based on theirs. 
