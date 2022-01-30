@@ -29,7 +29,7 @@ Training sets of adversarially-disjoint models, dataset: CIFAR-10, architecture:
 
 ### Set of 3 models ###
 ```javascript
-python main.py --optimizer_type sgd --lr 0. --lr_max 0.2 --lr_sched cycle --epochs 76 --models_num 3 --seed 1002 --tranfser_check_interval 4 --attack_type_check pgd --include_gradient_angle 1 --gradient_weight 0.4 --start_gradient_loss 0 --end_gradient_loss 5 --include_transfer_loss 1 --start_transfer_loss 1 --include_transfer_sgn_loss 1 --transfer_loss_weight 0.5 --start_transfer_sgn_loss 2 --transfer_loss_sgn_weight 0.4 --fgm_epsilon_training 6 --arch resnet18 --batch_size 106
+python main.py --optimizer_type sgd --lr 0. --lr_max 0.2 --lr_sched cycle --epochs 76 --models_num 3 --seed 1002 --tranfser_check_interval 4 --attack_type_check pgd --include_gradient_angle 1 --gradient_weight 0.4 --start_gradient_loss 0 --end_gradient_loss 5 --include_transfer_loss 1 --start_transfer_loss 1 --include_transfer_sgn_loss 1 --transfer_loss_weight 0.5 --start_transfer_sgn_loss 2 --transfer_loss_sgn_weight 0.4 --fgm_epsilon_training 6 --arch resnet18 --batch_size 120
 ```
 ### Set of 4 models ###
 ```javascript
