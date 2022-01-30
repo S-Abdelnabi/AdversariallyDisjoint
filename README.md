@@ -25,6 +25,7 @@ conda env create --name AdvDisjoint --file=environment.yml
 You can find pre-trained models for the different sets (ranging from 3 to 8 models) [here](https://oc.cs.uni-saarland.de/owncloud/index.php/s/LSfHBZfxozQAWAm).
 
 ## Training ##
+Training sets of adversarially-disjoint models, dataset: CIFAR-10, architecture:  PreAct ResNet18
 
 ### Set of 3 models ###
 ```javascript
